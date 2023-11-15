@@ -83,7 +83,7 @@ const useAuthCall = () => {
     dispatch(fetchStart())
     try {
       const { data } = await axios.post(
-        `${import.meta.env.VITE_BASE_URL}/account/register/`,
+        `${import.meta.env.VITE_BASE_URL}/account/register`,
         userData
       )
       dispatch(registerSuccess(data))
